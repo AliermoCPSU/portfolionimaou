@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aliermo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.min.css"> <!-- Your custom CSS file -->
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo"><i class="fas fa-ruler"></i> Virtual<b> Gallery</b></a>
+        <nav>
+          <ul class="links">
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#galiri"><i class="fas fa-images"></i> Arts</a></li>
+            <li><a href="#abawt"><i class="fas fa-user"></i> About Me</a></li>
+          
+            <li><i class="fas fa-user-shield"></i></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="content" id="home">
+      <div class="container">
+        <div class="split-screen">
+          <div class="info">
+            <h1>Looking For an Artist</h1>
+            <p>Looking for an artist? Allow me to bring your ideas to life with my sketching and drawing skills.</p>
+            <p>If you're in need of custom artwork or want to hire an artist for a project, don't hesitate to reach out. I'm here to help!</p>
+            <a href="#abawt"><button>Hire Me</button></a>
+          </div>
+          <figure class="image">
+            <img src="img/arabica-5.png" alt="Lounge Girl">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Gallery Section -->
+    <section class="additional-content">
+      <div class="container">
+        <div class="info">
+          <h1>Here are some of my previous works</h1>
+          <p>Immerse yourself in the tranquility of everyday moments, beautifully captured in my collection. Let these casual snapshots transport you to a realm of serene appreciation.</p>
+<p>Here, you can also explore my previous works for clients. Each piece is a testament to my dedication and passion for sketching and drawing. If you're looking for an artist to bring your ideas to life, don't hesitate to reach out!</p>
+          
+        </div>
+        <div class="gallery" id="galiri">
+          <img src="img/1.jpg" height="350" width="350">
+          <img src="img/2.jpg" height="350" width="350">
+          <img src="img/3.jpg" height="350" width="350">
+          <img src="img/4.jpg" height="350" width="350">
+          <img src="img/5.jpg" height="350" width="350">
+          <img src="img/6.jpg" height="350" width="350">
+          <img src="img/7.jpg" height="350" width="350">
+          <img src="img/8.jpg" height="350" width="350">
+          <img src="img/9.jpg" height="350" width="350">
+          <img src="img/10.jpg" height="350" width="350">
+          <img src="img/11.jpg" height="350" width="350">
+          <img src="img/12.jpg" height="350" width="350">
+          <!-- Add other images as required -->
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="split-screen">
+          <figure class="image">
+            <img src="img/maou.jpg" alt="Shane Mallorca">
+          </figure>
+          <div class="info" id="abawt">
+            <h1>About Me</h1>
+            <p>Hello, I'm Emmanuel Aliermo, 22, living in the stunning town of Calatrava in the Philippines. My passion? Expressing life's beauty through art. From lush landscapes to the local culture, my brush and pencil tell the stories of my world. Join me in this artistic journey, where every sketch and painting is a piece of my passion for art. 🎨✨.</p>
+<p>If you have any specific artistic needs or are looking to commission an artist, don't hesitate to reach out!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" id="poter">
+      <p>You can contact me on:</p>
+      <div class="social-icons">
+        <a href="https://web.facebook.com/zuck"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/mrrbeast/"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/elonmusk"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<script>
+  // Smooth scrolling function
+  document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('nav ul.links a');
+
+    for (const link of links) {
+      link.addEventListener('click', clickHandler);
+    }
+
+    function clickHandler(e) {
+      e.preventDefault();
+      const href = this.getAttribute('href');
+      const offsetTop = document.querySelector(href).offsetTop;
+
+      scroll({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  });
+</script>
+</html>
